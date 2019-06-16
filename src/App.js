@@ -176,7 +176,7 @@ export default class App extends Component {
 										const regionInfo = regionData[region];
 
 										if (!regionInfo.geo || !regionInfo.desc) {
-											return;
+											return null;
 										}
 
 										for (let correctedMarker of correctedMarkers) {
